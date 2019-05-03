@@ -1,0 +1,17 @@
+<templateSet group="user">
+  <template name="component" value="import React, { Component } from 'react';&#10;&#10;interface IProps {&#10;  [x: string]: any;&#10;}&#10;&#10;interface IState {&#10;  [x: string]: any;&#10;}&#10;&#10;export default class ComponentName extends Component&lt;IProps, IState&gt; {&#10;  state = {};&#10;&#10;  constructor(props) {&#10;    super(props);&#10;  }&#10;&#10;  render() {&#10;    return (&#10;      &lt;div&gt;&#10;&#10;      &lt;/div&gt;&#10;    );&#10;  }&#10;}" description="React Typescript class component template" toReformat="true" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="styled" value="import styled from 'styled-components';&#10;&#10;export const StyledComponent = (styled.div)&lt;any&gt;`&#10;&#10;`;&#10;" description="Typescript Styled Component Template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="container" value="import { IApplicationState } from '~/core/reducer';&#10;&#10;export const mapStateToProps = ({}: IApplicationState) =&gt; ({});&#10;&#10;export const mapDispatchToProps = dispatch =&gt; ({&#10;  someFunction(data) {&#10;    dispatch(someFunction(data));&#10;  },&#10;});&#10;" description="Redux typescript container boilerplate" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
