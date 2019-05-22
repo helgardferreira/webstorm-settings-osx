@@ -4,12 +4,17 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="styled" value="import styled from 'styled-components';&#10;&#10;export const StyledComponent = (styled.div)&lt;any&gt;`&#10;&#10;`;&#10;" description="Typescript Styled Component Template" toReformat="false" toShortenFQNames="true">
+  <template name="styled" value="import styled from 'styled-components';&#10;&#10;export const StyledComponent = styled.div&lt;any&gt;`&#10;&#10;`;&#10;" description="Typescript Styled Component Template" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
   <template name="container" value="import { IApplicationState } from '~/core/reducer';&#10;&#10;export const mapStateToProps = ({}: IApplicationState) =&gt; ({});&#10;&#10;export const mapDispatchToProps = dispatch =&gt; ({&#10;  someFunction(data) {&#10;    dispatch(someFunction(data));&#10;  },&#10;});&#10;" description="Redux typescript container boilerplate" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sfc" value="import React, { FunctionComponent } from 'react';&#10;&#10;interface IProps {&#10;  [x: string]: any;&#10;}&#10;&#10;const ComponentName: FunctionComponent&lt;IProps&gt; = (props) =&gt; {&#10;  return (&#10;    &lt;div&gt;&#10;&#10;    &lt;/div&gt;&#10;  );&#10;};&#10;&#10;ComponentName.defaultProps = {&#10;&#10;};&#10;&#10;export default ComponentName;&#10;" description="React Stateless Component" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="TS_STATEMENT" value="true" />
     </context>
