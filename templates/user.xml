@@ -9,7 +9,7 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="container" value="import { IApplicationState } from '~/core/reducer';&#10;&#10;export const mapStateToProps = ({}: IApplicationState) =&gt; ({});&#10;&#10;export const mapDispatchToProps = dispatch =&gt; ({&#10;  someFunction(data) {&#10;    dispatch(someFunction(data));&#10;  },&#10;});&#10;" description="Redux typescript container boilerplate" toReformat="false" toShortenFQNames="true">
+  <template name="container" value="import { IApplicationState } from '~/core/reducer';&#10;&#10;export const mapStateToProps = (state: IApplicationState) =&gt; {&#10;  const {&#10;&#10;  } = state;&#10;&#10;  return {};&#10;};&#10;&#10;export const mapDispatchToProps = dispatch =&gt; ({&#10;  someFunction(data) {&#10;    dispatch(someFunction(data));&#10;  },&#10;});&#10;" description="Redux typescript container boilerplate" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="TS_STATEMENT" value="true" />
     </context>
