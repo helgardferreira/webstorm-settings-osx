@@ -6,6 +6,7 @@
       <mapping pattern="styles" type="PLAIN_TEXT" />
       <mapping pattern=".gitkeep" type="PLAIN_TEXT" />
       <mapping pattern="definition-usage" type="PLAIN_TEXT" />
+      <mapping pattern="text-area" type="TypeScript JSX" />
       <mapping pattern="page-internal-window" type="TypeScript JSX" />
     </extensionMap>
   </component>
