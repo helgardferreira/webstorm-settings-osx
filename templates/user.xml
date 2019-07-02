@@ -29,4 +29,9 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="hook:state" value="const [state, setState]: [IState, (...args) =&gt; any] = useState({&#10;  &#10;});" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
