@@ -34,4 +34,9 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="saga" value="import { put, select, takeLatest } from 'redux-saga/effects';&#10;import { IApplicationState } from '~/core/reducer';&#10;import history from '~/core/history';&#10;import { informationAPIError } from '~/apis';&#10;&#10;function* sagaWorker(action) {&#10;  try {&#10;    const {  } = action;&#10;    const state = yield select(state =&gt; state);&#10;    return yield(() =&gt; {});&#10;  } catch (ex) {&#10;    console.error(ex);&#10;    // Handle any errors from fetching page payload&#10;    yield put(informationAPIError(ex));&#10;  }&#10;}&#10;&#10;function* sagaName() {&#10;  yield takeLatest(['CREATE_NEW_WITH_CONTEXT'], sagaWorker);&#10;}&#10;&#10;export default sagaName;&#10;" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
