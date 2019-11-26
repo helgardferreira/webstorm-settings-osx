@@ -48,4 +48,11 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="reducer" value="// import {&#10;&#10;// } from '../actions';&#10;&#10;export interface I$BIG_REDUCER_NAME$State {&#10;  [x: string]: any;&#10;}&#10;&#10;const initialState = {};&#10;&#10;const $REDUCER_NAME$ = (state = initialState, action): I$BIG_REDUCER_NAME$State =&gt; {&#10;  const { type, data } = action;&#10;  switch (type) {&#10;    default:&#10;      return state;&#10;  }&#10;};&#10;&#10;export default $REDUCER_NAME$;&#10;" description="redux reduxer" toReformat="false" toShortenFQNames="true">
+    <variable name="REDUCER_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BIG_REDUCER_NAME" expression="capitalize(String)" defaultValue="capitalize(REDUCER_NAME)" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
