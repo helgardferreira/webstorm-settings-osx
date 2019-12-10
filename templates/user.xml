@@ -55,4 +55,10 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="apifn" value="export const $FUNCTION_NAME$ = async (&#10;  token: string,&#10;  // &#10;): Promise&lt;any&gt; =&gt; {&#10;  const url = `${API_BASE_PATH}/$END$`;&#10;  const options = generateOptions(token);&#10;  const response = await fetch(url, options);&#10;  handleResponse(response);&#10;  return await response.json();&#10;};" description="Api request function" toReformat="false" toShortenFQNames="true">
+    <variable name="FUNCTION_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
