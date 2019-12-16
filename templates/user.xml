@@ -36,8 +36,8 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="saga" value="import { put, select, takeLatest } from 'redux-saga/effects';&#10;import { IApplicationState } from '~/core/reducer';&#10;&#10;const getState = (state: IApplicationState) =&gt; state;&#10;&#10;function* sagaWorker(action) {&#10;  try {&#10;    const { data } = action;&#10;    $END$&#10;    const state = yield select(getState);&#10;    return yield(() =&gt; {});&#10;  } catch (ex) {&#10;    console.error(ex);&#10;    // Handle any errors from fetching page payload&#10;  }&#10;}&#10;&#10;function* $SAGA_NAME$() {&#10;  yield takeLatest(['ACTION_NAME'], sagaWorker);&#10;}&#10;&#10;export default $SAGA_NAME$;&#10;" description="" toReformat="false" toShortenFQNames="true">
-    <variable name="SAGA_NAME" expression="" defaultValue="sagaName" alwaysStopAt="true" />
+  <template name="saga" value="import { call, put, select, takeLatest } from 'redux-saga/effects';$END$&#10;&#10;function* sagaWorker(action) {&#10;  try {&#10;    const { data } = action;&#10;    return yield put(() =&gt; {});&#10;  } catch (ex) {&#10;    console.error(ex);&#10;    return yield put(() =&gt; {});&#10;  }&#10;}&#10;&#10;function* $NAME$ () {&#10;  yield takeLatest(['ACTION_NAME'], sagaWorker);&#10;}&#10;&#10;export default $NAME$;&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
     <context>
       <option name="TS_STATEMENT" value="true" />
     </context>
