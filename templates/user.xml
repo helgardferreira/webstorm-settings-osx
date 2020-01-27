@@ -61,4 +61,9 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="test" value="describe('functionName', () =&gt; {&#10;  it('should do something', () =&gt; {&#10;    const expected = {};&#10;    const result = functionName();&#10;    expected(result).toEqual(expected);&#10;  })&#10;})" description="Jest test" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
