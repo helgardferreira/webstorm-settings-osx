@@ -2,6 +2,7 @@
   <action id="ActivateTerminalToolWindow">
     <keyboard-shortcut first-keystroke="ctrl back_quote" />
   </action>
+  <action id="Diff.ShowSettingsPopup" />
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="shift meta a" />
     <keyboard-shortcut first-keystroke="shift meta p" />
@@ -13,4 +14,8 @@
   <action id="StringManipulation.Sort">
     <keyboard-shortcut first-keystroke="f9" />
   </action>
+  <action id="ToggleDistractionFreeMode">
+    <keyboard-shortcut first-keystroke="shift meta d" />
+  </action>
+  <action id="Uml.ShowDiff" />
 </keymap>
