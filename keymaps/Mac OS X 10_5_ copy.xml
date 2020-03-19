@@ -7,14 +7,19 @@
     <keyboard-shortcut first-keystroke="shift meta a" />
     <keyboard-shortcut first-keystroke="shift meta p" />
   </action>
+  <action id="GotoTest" />
   <action id="MoveTabRight">
     <keyboard-shortcut first-keystroke="shift meta e" />
   </action>
   <action id="QuickChangeScheme" />
   <action id="RecentLocations" />
+  <action id="ReopenClosedTab">
+    <keyboard-shortcut first-keystroke="shift meta t" />
+  </action>
   <action id="Resume">
     <keyboard-shortcut first-keystroke="meta alt r" />
   </action>
+  <action id="ServiceView.ShowServices" />
   <action id="StringManipulation.Sort">
     <keyboard-shortcut first-keystroke="f9" />
   </action>
