@@ -73,7 +73,7 @@
   </template>
   <template name="comm" value="/* =================== $END$ ===================*/" description="Comment separator" toReformat="false" toShortenFQNames="true">
     <context>
-      <option name="JS_STATEMENT" value="true" />
+      <option name="JAVA_SCRIPT" value="true" />
     </context>
   </template>
 </templateSet>
