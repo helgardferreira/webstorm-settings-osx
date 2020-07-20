@@ -23,7 +23,7 @@
   <action id="StringManipulation.Sort">
     <keyboard-shortcut first-keystroke="f9" />
   </action>
-  <action id="ToggleDistractionFreeMode">
+  <action id="ToggleZenMode">
     <keyboard-shortcut first-keystroke="shift meta d" />
   </action>
   <action id="Uml.ShowDiff" />
