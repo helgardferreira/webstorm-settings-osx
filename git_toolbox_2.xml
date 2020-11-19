@@ -4,11 +4,31 @@
       <ExtrasConfig>
         <option name="autoFetchEnabledOverride">
           <BoolConfigOverride>
+            <option name="applied">
+              <list>
+                <AppliedConfigOverride>
+                  <option name="projectPath" value="$USER_HOME$/Workspace/admin-app-and-website/server" />
+                </AppliedConfigOverride>
+                <AppliedConfigOverride>
+                  <option name="projectPath" value="$USER_HOME$/Workspace/admin-app-and-website/client" />
+                </AppliedConfigOverride>
+              </list>
+            </option>
             <option name="enabled" value="true" />
           </BoolConfigOverride>
         </option>
         <option name="autoFetchOnBranchSwitchOverride">
           <BoolConfigOverride>
+            <option name="applied">
+              <list>
+                <AppliedConfigOverride>
+                  <option name="projectPath" value="$USER_HOME$/Workspace/admin-app-and-website/server" />
+                </AppliedConfigOverride>
+                <AppliedConfigOverride>
+                  <option name="projectPath" value="$USER_HOME$/Workspace/admin-app-and-website/client" />
+                </AppliedConfigOverride>
+              </list>
+            </option>
             <option name="enabled" value="true" />
           </BoolConfigOverride>
         </option>
