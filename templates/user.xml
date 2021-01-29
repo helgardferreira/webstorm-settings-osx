@@ -71,7 +71,7 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
-  <template name="comm" value="/* =================== $END$ ===================*/" description="Comment separator" toReformat="false" toShortenFQNames="true">
+  <template name="comm" value="/* =================== $END$ =================== */" description="Comment separator" toReformat="false" toShortenFQNames="true">
     <context>
       <option name="JAVA_SCRIPT" value="true" />
     </context>
