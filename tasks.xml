@@ -9,8 +9,8 @@
       </task>
       <task priority="Normal" completed="false" estimated="0" created="1616655789153" actual="0" highlighted="false" highlightingtype="Red" title="API Tasks" description="">
         <task priority="Normal" completed="false" estimated="0" created="1616655869367" actual="0" highlighted="false" highlightingtype="Red" title="Banners - Link Text, Description fields" description="" />
-        <task priority="Normal" completed="false" estimated="0" created="1616655883256" actual="0" highlighted="false" highlightingtype="Red" title="Create separate modules for public routes" description="" />
-        <task priority="Normal" completed="false" estimated="0" created="1616655901164" actual="0" highlighted="false" highlightingtype="Red" title="Add public routes" description="" />
+        <task priority="Normal" completed="true" estimated="0" created="1616655883256" actual="0" highlighted="false" highlightingtype="Red" title="Create separate modules for public routes" description="" />
+        <task priority="Normal" completed="true" estimated="0" created="1616655901164" actual="0" highlighted="false" highlightingtype="Red" title="Add public routes" description="" />
       </task>
     </tasks>
   </component>
