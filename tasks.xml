@@ -3,7 +3,7 @@
     <tasks>
       <task priority="Normal" completed="false" estimated="0" created="1616655784030" actual="0" highlighted="false" highlightingtype="Red" title="UI Tasks" description="">
         <task priority="Normal" completed="true" estimated="0" created="1616655799110" actual="0" highlighted="false" highlightingtype="Red" title="Variables - UI API Boilerplate " description="Variables - UI API Boilerplate " />
-        <task priority="Normal" completed="false" estimated="0" created="1616655814061" actual="0" highlighted="false" highlightingtype="Red" title="Variables - Sagas" description="" />
+        <task priority="Normal" completed="true" estimated="0" created="1616655814061" actual="0" highlighted="false" highlightingtype="Red" title="Variables - Sagas" description="" />
         <task priority="Normal" completed="false" estimated="0" created="1616655825269" actual="0" highlighted="false" highlightingtype="Red" title="Variables - Grid" description="" />
         <task priority="Normal" completed="false" estimated="0" created="1616655837657" actual="0" highlighted="false" highlightingtype="Red" title="Variables - Create / Edit form" description="" />
       </task>
