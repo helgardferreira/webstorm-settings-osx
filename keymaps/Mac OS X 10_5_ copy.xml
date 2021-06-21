@@ -7,11 +7,18 @@
     <keyboard-shortcut first-keystroke="alt f2" />
     <keyboard-shortcut first-keystroke="shift meta 0" />
   </action>
+  <action id="Git.CompareWithBranch">
+    <keyboard-shortcut first-keystroke="shift meta b" />
+  </action>
   <action id="GotoAction">
     <keyboard-shortcut first-keystroke="shift meta a" />
     <keyboard-shortcut first-keystroke="shift meta p" />
   </action>
   <action id="GotoTest" />
+  <action id="GotoTypeDeclaration">
+    <keyboard-shortcut first-keystroke="shift ctrl b" />
+    <mouse-shortcut keystroke="shift meta button1" />
+  </action>
   <action id="MoveTabRight">
     <keyboard-shortcut first-keystroke="shift meta e" />
   </action>
