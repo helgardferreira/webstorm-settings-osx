@@ -27,10 +27,6 @@
       <NestingRule child-file-suffix=".css" parent-file-suffix=".scss" />
       <NestingRule child-file-suffix=".css.map" parent-file-suffix=".scss" />
       <NestingRule child-file-suffix=".css" parent-file-suffix=".styl" />
-      <NestingRule child-file-suffix=".d.ts" parent-file-suffix=".ts" />
-      <NestingRule child-file-suffix=".d.ts.map" parent-file-suffix=".ts" />
-      <NestingRule child-file-suffix=".js" parent-file-suffix=".ts" />
-      <NestingRule child-file-suffix=".js.map" parent-file-suffix=".ts" />
     </nesting-rules>
   </component>
   <component name="UISettings">
