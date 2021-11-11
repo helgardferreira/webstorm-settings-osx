@@ -82,4 +82,12 @@
       <option name="TS_STATEMENT" value="true" />
     </context>
   </template>
+  <template name="action" value="export const $ACTION_NAME$_START = '$SCOPE_NAME$/$ACTION_NAME$_START'&#10;export const $ACTION_NAME$_SUCCESS = '$SCOPE_NAME$/$ACTION_NAME$_SUCCESS'&#10;export const $ACTION_NAME$_ERROR = '$SCOPE_NAME$/$ACTION_NAME$_ERROR'&#10;&#10;export const $ACTION_NAME_CAMELCASE$Start = (data?: any) =&gt; ({&#10;  type: $ACTION_NAME$_START, data,&#10;})&#10;export const $ACTION_NAME_CAMELCASE$Success = (data?: any) =&gt; ({&#10;  type: $ACTION_NAME$_SUCCESS, data,&#10;})&#10;export const $ACTION_NAME_CAMELCASE$Error = (data?: any) =&gt; ({&#10;  type: $ACTION_NAME$_ERROR, data,&#10;})" description="redux async action boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="capitalizeAndUnderscore(String)" defaultValue="capitalizeAndUnderscore(ACTION_NAME)" alwaysStopAt="true" />
+    <variable name="SCOPE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_NAME_CAMELCASE" expression="camelCase(String)" defaultValue="camelCase(ACTION_NAME)" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
 </templateSet>
