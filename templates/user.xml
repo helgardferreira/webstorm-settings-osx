@@ -1,0 +1,80 @@
+<templateSet group="user">
+  <template name="styled" value="import styled from 'styled-components'&#10;import { $END$ } from 'styled-system'&#10;&#10;export const StyledComponent = styled.div&lt;any&gt;`&#10;  &#10;`&#10;" description="Typescript Styled Component Template" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="container" value="import { connect } from 'react-redux'&#10;import { IApplicationState } from 'interfaces'&#10;&#10;import $COMPONENT_NAME$ from './$COMPONENT_NAME$'&#10;&#10;export const mapStateToProps = (state: IApplicationState) =&gt; {&#10;  $END$&#10;  return {&#10;  &#10;  }&#10;}&#10;&#10;const mapDispatchToProps = dispatch =&gt; ({&#10;  &#10;})&#10;&#10;export default connect(mapStateToProps, mapDispatchToProps)($COMPONENT_NAME$)&#10;&#10;&#10;" description="Redux typescript container boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sfac" value="import React, { useState, useEffect, FC } from 'react';&#10;&#10;interface IComponentProps {&#10;  [x: string]: any;&#10;}&#10;&#10;interface IContainerProps {&#10;  token?: string;&#10;}&#10;&#10;type IProps = IComponentProps &amp; IContainerProps;&#10;&#10;const $COMPONENT_NAME$: FC&lt;IProps&gt; = (props) =&gt; {&#10;  const { } = props;&#10;  &#10;  $END$&#10;&#10;  const [isLoading, setLoadingState] = useState(false);&#10;  const [hasError, setErrorState] = useState(false);&#10;&#10;  useEffect(() =&gt; {&#10;    async function run() {&#10;      const { token } = props;&#10;      try {&#10;        setLoadingState(true);&#10;        /* Run async actions here */&#10;        setLoadingState(false);&#10;      } catch (ex) {&#10;        console.log('Error fetching data: ', ex);&#10;        setLoadingState(false);&#10;        setErrorState(true);&#10;      }&#10;    }&#10;    run();&#10;  }, []);&#10;&#10;  if (isLoading) {&#10;    return (&lt;div&gt;Loading...&lt;/div&gt;);&#10;  }&#10;&#10;  if (hasError) {&#10;    return &lt;div&gt;An error has occurred!&lt;/div&gt;;&#10;  }&#10;&#10;  return (&#10;    &lt;div&gt;&#10;&#10;    &lt;/div&gt;&#10;  );&#10;};&#10;&#10;$COMPONENT_NAME$.defaultProps = {&#10;  palette: 'primary',&#10;  token: '',&#10;};&#10;&#10;export default $COMPONENT_NAME$;&#10;" description="Stateless Functional Async Component" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="" defaultValue="ComponentName" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="component" value="import React, { useState, FunctionComponent } from 'react';&#10;&#10;interface IProps {&#10;  palette?: string;&#10;}&#10;&#10;interface IState {&#10;  [x: string]: any;&#10;}&#10;&#10;const MyComponent: FunctionComponent&lt;IProps&gt; = (props) =&gt; {&#10;  const [state, setState]: [IState, (...args) =&gt; any] = useState({});&#10;&#10;  const {} = props;&#10;&#10;  return (&#10;    &lt;div&gt;&#10;&#10;    &lt;/div&gt;&#10;  );&#10;};&#10;&#10;MyComponent.defaultProps = {&#10;  palette: 'primary',&#10;}&#10;&#10;export default MyComponent;" description="React hooks functional component" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="saga" value="import { call, put, select, takeLatest } from 'redux-saga/effects';$END$&#10;&#10;function* sagaWorker(action) {&#10;  try {&#10;    const { data } = action;&#10;  } catch (ex) {&#10;    console.error(ex);&#10;  }&#10;}&#10;&#10;function* $NAME$() {&#10;  yield takeLatest(['ACTION_NAME'], sagaWorker);&#10;}&#10;&#10;export default $NAME$;&#10;" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="reducer" value="// import {&#10;&#10;// } from '../actions';&#10;&#10;export interface I$BIG_REDUCER_NAME$State {&#10;  [x: string]: any;&#10;}&#10;&#10;const initialState = {};&#10;&#10;const $REDUCER_NAME$ = (state = initialState, action): I$BIG_REDUCER_NAME$State =&gt; {&#10;  const { type, data } = action;&#10;  switch (type) {&#10;    default:&#10;      return state;&#10;  }&#10;};&#10;&#10;export default $REDUCER_NAME$;&#10;" description="redux reduxer" toReformat="false" toShortenFQNames="true">
+    <variable name="REDUCER_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="BIG_REDUCER_NAME" expression="capitalize(String)" defaultValue="capitalize(REDUCER_NAME)" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="test" value="describe('functionName', () =&gt; {&#10;  it('should do something', () =&gt; {&#10;    const expected = {};&#10;    const result = functionName();&#10;    expected(result).toEqual(expected);&#10;  })&#10;})" description="Jest test" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="comm" value="/* =================== $END$ =================== */" description="Comment separator" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+    </context>
+  </template>
+  <template name="sel" value="export const $SELECTOR_NAME$ = (state: IApplicationState) =&gt; {&#10;  return state?.$END$&#10;}" description="Redux typescript container boilerplate" toReformat="true" toShortenFQNames="true">
+    <variable name="SELECTOR_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="actions" value="export const $ACTION_NAME$_START = '$SCOPE_NAME$/$ACTION_NAME$_START'&#10;export const $ACTION_NAME$_SUCCESS = '$SCOPE_NAME$/$ACTION_NAME$_SUCCESS'&#10;export const $ACTION_NAME$_ERROR = '$SCOPE_NAME$/$ACTION_NAME$_ERROR'&#10;&#10;export const $ACTION_NAME_CAMELCASE$Start = (data?: any) =&gt; ({&#10;  type: $ACTION_NAME$_START, data,&#10;})&#10;export const $ACTION_NAME_CAMELCASE$Success = (data?: any) =&gt; ({&#10;  type: $ACTION_NAME$_SUCCESS, data,&#10;})&#10;export const $ACTION_NAME_CAMELCASE$Error = (data?: any) =&gt; ({&#10;  type: $ACTION_NAME$_ERROR, data,&#10;})" description="redux async action boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="capitalizeAndUnderscore(String)" defaultValue="capitalizeAndUnderscore(ACTION_NAME)" alwaysStopAt="true" />
+    <variable name="SCOPE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_NAME_CAMELCASE" expression="camelCase(String)" defaultValue="camelCase(ACTION_NAME)" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="action" value="export const $ACTION_NAME$ = '$SCOPE_NAME$/$ACTION_NAME$'&#10;&#10;export const $ACTION_NAME_CAMELCASE$ = (data?: any) =&gt; ({&#10;  type: $ACTION_NAME$, data,&#10;})&#10;" description="redux async single action boilerplate" toReformat="false" toShortenFQNames="true">
+    <variable name="ACTION_NAME" expression="capitalizeAndUnderscore(String)" defaultValue="capitalizeAndUnderscore(ACTION_NAME)" alwaysStopAt="true" />
+    <variable name="SCOPE_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="ACTION_NAME_CAMELCASE" expression="camelCase(String)" defaultValue="camelCase(ACTION_NAME)" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="prod" value="return produce(state, (draftState) =&gt; {&#10;  draftState.$END$&#10;})" description="Redux typescript container boilerplate" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+  <template name="sfc" value="import React, { FC } from 'react'&#10;&#10;interface IProps {&#10;  $END$&#10;&#10;  [x: string]: any;&#10;}&#10;&#10;const $COMPONENT_NAME$: FC&lt;IProps&gt; = (props) =&gt; {&#10;  const { } = props&#10;&#10;  return (&#10;    &lt;div /&gt;&#10;  )&#10;}&#10;&#10;$COMPONENT_NAME$.defaultProps = {&#10;&#10;}&#10;&#10;export default $COMPONENT_NAME$&#10;" description="Stateless Functional Component" toReformat="false" toShortenFQNames="true">
+    <variable name="COMPONENT_NAME" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="TS_STATEMENT" value="true" />
+    </context>
+  </template>
+</templateSet>
