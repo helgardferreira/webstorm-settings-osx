@@ -1,0 +1,7 @@
+<keymap version="1" name="macOS copy" parent="Mac OS X 10.5+">
+  <action id="CloseGotItTooltip" />
+  <action id="EditorEscape" />
+  <action id="EscUnfollowUserAction" />
+  <action id="FocusEditor" />
+  <action id="Terminal.SwitchFocusToEditor" />
+</keymap>
